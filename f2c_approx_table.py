@@ -1,6 +1,6 @@
 print('------------------')  # table heading
-F = 0  # start value for C
-dF = 10  # increment of C in loop
+F = 0  # start value for F
+dF = 10  # increment of F in loop
 while F <= 100:  # loop heading with condition
     C = (5 / 9) * (F - 32)  # 1st statement inside loop
     Ca = (F - 30) / 2
