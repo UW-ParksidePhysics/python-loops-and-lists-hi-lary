@@ -13,10 +13,18 @@ t_values = []
 for i in array:
     t = a + i * h
     t_values.append(t)
+while t_values <= b:
+    y = (v * t_values) - 0.5 * g * t_values ** 2
+    print(t_values, y)
 
-#while t <= b:
+#for i in array:
+    #t = a + i * h
+    #t_values.append(t)
+
+#for t in t_values:
     #y = (v * t) - 0.5 * g * t ** 2
+   # print(f'{t}, {y}')
 
-print(t_values)
+
 
 
