@@ -2,6 +2,7 @@
 fahrenheit to Celsius = (f-32)*(5/9)
 """
 
+# exercise 2.1
 print('------------------')     # table heading
 F = 0                           # start value for F
 dF = 10                         # increment of F in loop
