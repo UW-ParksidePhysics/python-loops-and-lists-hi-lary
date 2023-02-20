@@ -9,22 +9,15 @@ n = eval(input('num of intervals:'))    # number of desired intervals
 h = (b - a) / n                         # interval length
 array = np.arange(0, n + 1, 1)          # start value , stop - 1, intervals
 t_values = []
+t_values2 = []
+t = 0
 
 for i in array:
     t = a + i * h
+    y = (v * t) - 0.5 * g * t ** 2
     t_values.append(t)
-while t_values <= b:
-    y = (v * t_values) - 0.5 * g * t_values ** 2
-    print(t_values, y)
-
-#for i in array:
-    #t = a + i * h
-    #t_values.append(t)
-
-#for t in t_values:
-    #y = (v * t) - 0.5 * g * t ** 2
-   # print(f'{t}, {y}')
-
-
-
-
+while t <= b:
+    y = (v * t) - 0.5 * g * t ** 2
+    t_values2.append(t)
+    print(t, y)
+    t = t + h
